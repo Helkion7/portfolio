@@ -37,9 +37,6 @@ const ProfileHeader = () => {
             <Linkedin size={24} />
           </button>
           <button className="p-2 hover:bg-zinc-800 rounded-md">
-            <span className="text-2xl">𝕏</span>
-          </button>
-          <button className="p-2 hover:bg-zinc-800 rounded-md">
             <Github size={24} />
           </button>
         </div>
