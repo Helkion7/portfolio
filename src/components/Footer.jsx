@@ -3,7 +3,7 @@ import { Mail, Phone, Linkedin, Github } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-800 text-white w-full mt-auto">
+    <footer className=" text-white w-full mt-auto">
       <div className="max-w-6xl mx-auto p-6">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           {/* Contact Information */}
