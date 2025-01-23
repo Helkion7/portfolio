@@ -21,11 +21,11 @@ const Experience = () => {
 
   const workExperience = [
     {
-      position: "IT Praktikant",
+      position: "IT Intern",
       company: "HENT AS",
       period: "2024 - Present",
       description:
-        "Lead developer for enterprise web applications using React and Node.js",
+        "Hent is one of the largest construction companies in Norway, and has many projects around the country. This requires a lot from the IT department, which means that as an intern, I am involved in almost everything they do day to day. This involves a lot of on-site operations, but also some user support. During the period where I have been an intern, I have learned a lot about how to provide IT assistance at various construction sites, as well as how I use central systems in Hent, such as House of Control for unit registration.",
     },
   ];
 

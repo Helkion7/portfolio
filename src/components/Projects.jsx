@@ -4,22 +4,24 @@ import { Github, ExternalLink } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Project Name 1",
+      title: "Memesters tournament",
       description:
-        "A brief description of your project. Explain what it does and what technologies you used.",
-      technologies: ["React", "Node.js", "MongoDB"],
-      githubLink: "https://github.com/yourusername/project1",
+        "A make it meme inspired meme battling game, where you and your friends can find out who makes the best memes and win the tournament.",
+      technologies: ["React", "Node.js", "MongoDB", "tailwind", "socket.io"],
+      githubLink: "https://github.com/EliasNeerbye/memesters-tournament",
       liveLink: "https://project1-demo.com",
-      image: "/api/placeholder/400/200",
+      status: "Finished",
+      image: "./public/MemestersTournament.png",
     },
     {
-      title: "Project Name 2",
+      title: "HelpDesk",
       description:
-        "Another project description. Keep it concise but informative about the key features.",
-      technologies: ["JavaScript", "Express", "PostgreSQL"],
-      githubLink: "https://github.com/yourusername/project2",
+        "A user friendly website that provides a platform for people to see and create guides for all types of purposes",
+      technologies: ["JavaScript", "EJS", "Node.js", "MongoDB"],
+      githubLink: "https://github.com/Helkion7/brukerguide",
       liveLink: "https://project2-demo.com",
-      image: "/api/placeholder/400/200",
+      status: "Finished",
+      image: "./public/HelpDesk.png",
     },
     // Add more projects as needed
   ];
