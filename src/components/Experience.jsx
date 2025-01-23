@@ -4,32 +4,28 @@ import { GraduationCap, Briefcase } from "lucide-react";
 const Experience = () => {
   const education = [
     {
-      degree: "Master of Science in Computer Science",
-      institution: "University of Oslo",
-      period: "2020 - 2022",
-      description: "Specialized in Web Technologies and Software Engineering",
+      degree: "Informasjonsteknologi",
+      institution: "Bleiker Videregående Skole",
+      period: "2024 - present",
+      description:
+        "During my second year of Information Technology, I deepened my knowledge of JavaScript while learning new technologies such as React, Tailwind, and more. I also gained more experience with networking through Cisco Packet Tracer. I applied this new knowledge to create multiple projects, including a Make It Meme-inspired group project, where users can create, join, and play a meme battle game online. This project involved implementing real-time features using socket.io and designing a responsive UI with React and Tailwind.",
     },
     {
-      degree: "Bachelor of Engineering",
-      institution: "Oslo Metropolitan University",
-      period: "2017 - 2020",
-      description: "Focus on Software Development and System Architecture",
+      degree: "Informasjonsteknologi og Medieproduksjon",
+      institution: "Bleiker Videregående Skole",
+      period: "2023 - 2024",
+      description:
+        "During my first year of Information Technology and Media Production, I gained a foundation in information technology, with complementing insight into media production. I learned about web development using HTML, CSS, and JavaScript, as well as backend technologies like Node.js. I also have experience with networking through Cisco Packet Tracer. In Media Production, I learned to use a wide variety of apps like Photoshop and Illustrator from the Adobe Suite.",
     },
   ];
 
   const workExperience = [
     {
-      position: "Senior Web Developer",
-      company: "Tech Company AS",
-      period: "2022 - Present",
+      position: "IT Praktikant",
+      company: "HENT AS",
+      period: "2024 - Present",
       description:
         "Lead developer for enterprise web applications using React and Node.js",
-    },
-    {
-      position: "Full Stack Developer",
-      company: "Digital Solutions Norway",
-      period: "2020 - 2022",
-      description: "Developed and maintained multiple client web applications",
     },
   ];
 
@@ -55,7 +51,7 @@ const Experience = () => {
   );
 
   return (
-    <div className="bg-zinc-900 p-6 text-white w-full max-w-3xl">
+    <div className="flex flex-col-reverse bg-zinc-900 p-6 text-white w-full max-w-3xl">
       <ExperienceCard
         title="Education"
         items={education}

@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileHeader from "./components/ProfileHeader";
-import Skills from "./components/skills";
+import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";

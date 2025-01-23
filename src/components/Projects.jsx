@@ -25,13 +25,13 @@ const Projects = () => {
   ];
 
   return (
-    <div className="bg-zinc-900 p-6 text-white">
-      <h1 className="text-2xl font-bold mb-6">Projects</h1>
-      <div className="flex flex-wrap gap-6">
+    <div className="bg-zinc-900 p-4 sm:p-6 text-white">
+      <h1 className="text-xl sm:text-2xl font-bold mb-6">Projects</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="flex-1 min-w-[300px] max-w-[400px] bg-zinc-800 rounded-lg overflow-hidden hover:transition-transform"
+            className="bg-zinc-800 rounded-lg overflow-hidden hover:transition-transform"
           >
             <img
               src={project.image}
@@ -39,8 +39,12 @@ const Projects = () => {
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-300 mb-4">{project.description}</p>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+                {project.title}
+              </h3>
+              <p className="text-gray-300 text-sm sm:text-base mb-4">
+                {project.description}
+              </p>
 
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, techIndex) => (

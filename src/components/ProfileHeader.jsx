@@ -3,12 +3,14 @@ import { FileText, Linkedin, Github } from "lucide-react";
 
 const ProfileHeader = () => {
   return (
-    <div className="bg-zinc-900 p-6 text-white">
-      <h1 className="text-4xl font-bold mb-2">Brynjar Berg Ødegaard</h1>
+    <div className="bg-zinc-900 p-4 sm:p-6 text-white w-full">
+      <h1 className="text-3xl sm:text-4xl font-bold mb-2">
+        Brynjar Berg Ødegaard
+      </h1>
 
       <div className="space-y-1 mb-4">
-        <p className="text-gray-400 text-xl">Web developer</p>
-        <p className="text-gray-400 text-xl">Tech enthusiast</p>
+        <p className="text-gray-400 text-lg sm:text-xl">Web developer</p>
+        <p className="text-gray-400 text-lg sm:text-xl">Tech enthusiast</p>
       </div>
 
       <div className="flex items-center text-gray-400 mb-6">
@@ -26,19 +28,28 @@ const ProfileHeader = () => {
         </div>
       </div>
 
-      <div className="flex gap-4">
-        <button className="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md">
+      <div className="flex flex-col sm:flex-row gap-4">
+        <button className="flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md">
           <FileText size={20} />
-          <span>CV</span>
+          <span><a href=""></a></span>
         </button>
-
         <div className="flex gap-4">
-          <button className="p-2 hover:bg-zinc-800 rounded-md">
+          <a
+            href="https://www.linkedin.com/in/brynjar-berg-%C3%B8degaard-789962326/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 hover:bg-zinc-800 rounded-md"
+          >
             <Linkedin size={24} />
-          </button>
-          <button className="p-2 hover:bg-zinc-800 rounded-md">
+          </a>
+          <a
+            href="https://github.com/Helkion7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 hover:bg-zinc-800 rounded-md"
+          >
             <Github size={24} />
-          </button>
+          </a>
         </div>
       </div>
     </div>
