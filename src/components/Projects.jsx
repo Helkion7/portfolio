@@ -11,7 +11,7 @@ const Projects = () => {
       githubLink: "https://github.com/EliasNeerbye/memesters-tournament",
       liveLink: "https://project1-demo.com",
       status: "Finished",
-      image: "./public/MemestersTournament.png",
+      image: "./MemestersTournament.png",
     },
     {
       title: "HelpDesk",
@@ -21,7 +21,7 @@ const Projects = () => {
       githubLink: "https://github.com/Helkion7/brukerguide",
       liveLink: "https://project2-demo.com",
       status: "Finished",
-      image: "./public/HelpDesk.png",
+      image: "./HelpDesk.png",
     },
     // Add more projects as needed
   ];
