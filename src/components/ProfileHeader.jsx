@@ -9,7 +9,9 @@ const ProfileHeader = () => {
       </h1>
 
       <div className="space-y-1 mb-4">
-        <p className="text-gray-400 text-lg sm:text-xl">Web developer</p>
+        <p className="text-gray-400 text-lg sm:text-xl">
+          Full-stack web developer
+        </p>
         <p className="text-gray-400 text-lg sm:text-xl">Tech enthusiast</p>
       </div>
 
@@ -31,7 +33,9 @@ const ProfileHeader = () => {
       <div className="flex flex-col sm:flex-row gap-4">
         <button className="flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md">
           <FileText size={20} />
-          <span><a href=""></a></span>
+          <span>
+            <a href=""></a>
+          </span>
         </button>
         <div className="flex gap-4">
           <a
