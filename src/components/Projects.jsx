@@ -23,7 +23,16 @@ const Projects = () => {
       status: "Finished",
       image: "./HelpDesk.png",
     },
-    // Add more projects as needed
+    {
+      title: "API kurs",
+      description:
+        "A project with three different websites using three different APIs [Weather app, Camera app and Movie app]. The project was solely to learn more about APIs and how to use them",
+      technologies: ["JavaScript", "HTML", "CSS", "API"],
+      githubLink: "https://github.com/Helkion7/apiKurs",
+      liveLink: "https://project2-demo.com",
+      status: "Finished",
+      image: "./movieapp.png",
+    },
   ];
 
   return (
@@ -68,15 +77,6 @@ const Projects = () => {
                 >
                   <Github size={16} />
                   <span>Code</span>
-                </a>
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-gray-300 hover:text-white"
-                >
-                  <ExternalLink size={16} />
-                  <span>Live Demo</span>
                 </a>
               </div>
             </div>
