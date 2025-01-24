@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, ExternalLink } from "lucide-react";
+import { Github } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -40,10 +40,7 @@ const Projects = () => {
       <h1 className="text-xl sm:text-2xl font-bold mb-6">Projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-zinc-800 rounded-lg overflow-hidden hover:transition-transform"
-          >
+          <div key={index} className="bg-zinc-800 rounded-lg overflow-hidden">
             <img
               src={project.image}
               alt={project.title}

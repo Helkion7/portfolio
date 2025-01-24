@@ -30,20 +30,26 @@ const Experience = () => {
   ];
 
   const ExperienceCard = ({ title, items, icon: Icon }) => (
-    <div className="bg-zinc-800 rounded-lg p-6 mb-6">
+    <div className="bg-zinc-800 rounded-lg p-4 sm:p-6 mb-6">
       <div className="flex items-center gap-2 mb-4">
         <Icon size={24} />
-        <h2 className="text-2xl font-bold">{title}</h2>
+        <h2 className="text-xl sm:text-2xl font-bold">{title}</h2>
       </div>
       <div className="space-y-6">
         {items.map((item, index) => (
           <div key={index} className="border-l-2 border-zinc-600 pl-4">
-            <h3 className="text-xl font-semibold">
+            <h3 className="text-lg sm:text-xl font-semibold">
               {item.position || item.degree}
             </h3>
-            <p className="text-gray-400">{item.company || item.institution}</p>
-            <p className="text-gray-400 text-sm mb-2">{item.period}</p>
-            <p className="text-gray-300">{item.description}</p>
+            <p className="text-gray-400 text-sm sm:text-base">
+              {item.company || item.institution}
+            </p>
+            <p className="text-gray-400 text-xs sm:text-sm mb-2">
+              {item.period}
+            </p>
+            <p className="text-gray-300 text-sm sm:text-base">
+              {item.description}
+            </p>
           </div>
         ))}
       </div>
@@ -51,7 +57,7 @@ const Experience = () => {
   );
 
   return (
-    <div className="flex flex-col-reverse bg-zinc-900 p-6 text-white w-full max-w-3xl">
+    <div className="flex flex-col-reverse bg-zinc-900 p-4 sm:p-6 text-white w-full">
       <ExperienceCard
         title="Education"
         items={education}
