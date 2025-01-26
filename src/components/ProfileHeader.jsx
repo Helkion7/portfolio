@@ -31,12 +31,11 @@ const ProfileHeader = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4">
-        <button className="flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md">
-          <FileText size={20} />
-          <span>
-            <a href=""></a>
-          </span>
-        </button>
+        <a target="_-blank" href="./CV_Brynjar.pdf">
+          <button className="flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md">
+            <FileText size={20} />
+          </button>
+        </a>
         <div className="flex gap-4">
           <a
             href="https://www.linkedin.com/in/brynjar-berg-%C3%B8degaard-789962326/"
