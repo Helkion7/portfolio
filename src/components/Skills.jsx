@@ -4,6 +4,7 @@ export default function Skills() {
   const skills = [
     "Javascript",
     "ReactJS",
+    "MongoDB",
     "SQL",
     "HTML",
     "CSS",
